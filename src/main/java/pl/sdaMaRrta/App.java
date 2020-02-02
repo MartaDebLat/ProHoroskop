@@ -8,11 +8,13 @@ public class App {
         System.out.println("Witaj! Podaj swoje imię.");
         Scanner scan = new Scanner(System.in);
         String name = scan.nextLine();
-        System.out.println("Podaj swoją datę urodzenia w formacie dd.mm ");
-        String dateofbirth = scan.nextLine();
+        System.out.println("Podaj dzień w dacie urodzenia.");
+        String dayOfBirth = scan.nextLine();
+        System.out.println("Podaj miesiącw dacie urodzenia.");
+        String monthOfBirth = scan.nextLine();
 //        LocalDate
         String horoskopeMessage = "....";
-        System.out.println("Drogi " + name + " " + dateofbirth + " " + "twój horoskop na dzisiaj to: " + horoskopeMessage);
+        System.out.println("Drogi " + name + " " + dayOfBirth + monthOfBirth + " " + "twój horoskop na dzisiaj to: " + horoskopeMessage);
         String requestResult = Connector.getPage(scan.nextLine());
 
 
