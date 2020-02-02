@@ -3,7 +3,7 @@ package pl.sdaMaRrta;
 public class ZodiacSignRecogniser {
 
     public static void getSign() {
-
+// dateofBirth
 
     }
 }

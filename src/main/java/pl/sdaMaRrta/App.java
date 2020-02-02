@@ -9,13 +9,14 @@ public class App {
         Scanner scan = new Scanner(System.in);
         String name = scan.nextLine();
         System.out.println("Podaj swoją datę urodzenia w formacie dd.mm ");
-        Scanner scanTwo = new Scanner(System.in);
         String dateofbirth = scan.nextLine();
 //        LocalDate
         System.out.println("Drogi " + name + " " + dateofbirth + " " + "twój horoskop na dzisiaj to: " + "Tresc horoskopu.");
-        String requestResult = Connector.getPage(scan;scanTwo);
-        if (requestResult.equals(Connector.NOT_FOUND)){
+        String requestResult = Connector.getPage(scan.nextLine());
+        String horoskopeMessage;
 
+        if (requestResult.equals(Connector.NOT_FOUND)) {
+            horoskopeMessage = HoroskopeExtractor.getHoroscopeText(scan.nextLine());
         }
     }
 }

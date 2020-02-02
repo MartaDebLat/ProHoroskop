@@ -2,7 +2,9 @@ package pl.sdaMaRrta;
 
 import org.jsoup.Jsoup;
 
+
 import java.io.IOException;
+import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
