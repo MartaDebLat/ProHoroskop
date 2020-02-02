@@ -11,12 +11,21 @@ public class App {
         System.out.println("Podaj swoją datę urodzenia w formacie dd.mm ");
         String dateofbirth = scan.nextLine();
 //        LocalDate
-        System.out.println("Drogi " + name + " " + dateofbirth + " " + "twój horoskop na dzisiaj to: " + "Tresc horoskopu.");
+        String horoskopeMessage = "....";
+        System.out.println("Drogi " + name + " " + dateofbirth + " " + "twój horoskop na dzisiaj to: " + horoskopeMessage);
         String requestResult = Connector.getPage(scan.nextLine());
-        String horoskopeMessage;
+
 
         if (requestResult.equals(Connector.NOT_FOUND)) {
-            horoskopeMessage = HoroskopeExtractor.getHoroscopeText(scan.nextLine());
+            horoskopeMessage = HoroskopeExtractor.getHoroscopeText(requestResult);
         }
+
+        System.out.println(horoskopeMessage);
     }
+
+    public static void testHoroscopeExtractor() {
+
+    }
+
+
 }

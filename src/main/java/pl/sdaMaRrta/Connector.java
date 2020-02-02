@@ -35,18 +35,6 @@ public class Connector {
 //        10. Do końcowego Stringa dodaj imię użytkownika np "[Hej Krzysztof], Barany dzisiaj..."
 
     }
-
-    public void getHoroscopeText(String pageAsText) {
-
-        Pattern pattern = Pattern.compile("Twoj horoskop na dzisiaj to " + pageAsText);
-        Matcher matcher = pattern.matcher(pageAsText);
-
-//        if(matcher.find()){
-//            result = matcher.group();
-//        }
-//        Szczegóły działania: https://www.samouczekprogramisty.pl/wyrazenia-regularne-w-jezyku-java/
-//        Tworząc metodę testuj jej działanie wywołując ją z metody main.
-    }
 }
 
 

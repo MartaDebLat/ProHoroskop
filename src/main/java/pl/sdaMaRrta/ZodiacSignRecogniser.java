@@ -5,6 +5,7 @@ public class ZodiacSignRecogniser {
     public static void getSign() {
 // dateofBirth
 
+
     }
 }
 // Utwórz klasę ZodiacSignRecogniser z metodą getSign
